@@ -1,4 +1,4 @@
-const captalize = function (sentence) {
+function captalize (sentence) {
     let str =sentence.split(" ")
     for(let i=0;i<str.length;i++)
         {
