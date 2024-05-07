@@ -14,7 +14,7 @@ export function captalize (sentence) {
 
 
 export function captalizeAll (sentence1) {
-    let str =sentence1.split("")                     //convert string into array
+    let str =sentence1.split("")             //convert string into array
     
     for(let i =0;i<str.length;i++)
         {
@@ -59,4 +59,42 @@ export function getOccurrenceCount(st,OccurenceWord)
             }
 
 }
+
+export function wordDensity(st1,OccurenceWord1)
+{
+    let strr = st1.split(" ")
+    let count1=0;
+     
+     for(let i=0;i<strr.length;i++)
+         {
+             if(strr[i]===OccurenceWord1)
+                 count1 ++;
+         }
+         if(count1>0)
+             {
+                 console.log(count1);
+             }
+             else
+             {
+                 console.log(`${count1}`);
+             }
+ 
+           return (count1/strr.length)*100;
+}
+
+export function getExt()
+{
+
+}
+
+export function removeWhitespace(ss)
+{
+    let s= ss.split(" ")
+
+    for(let i =0 ;i<s.length;i++)
+        {
+            if(s!=" ")
+            
+        }
+} 
 

@@ -9,7 +9,7 @@
 <body>
     <h1>JavaScriptAssignment</h1>
 <script type="module">
-    import {captalize,captalizeAll,isExist,getOccurrenceCount} from "./stringManipulation.js";
+    import {captalize,captalizeAll,isExist,getOccurrenceCount,wordDensity} from "./stringManipulation.js";
    let result= captalize("sentence");
    console.log(result);
 
@@ -17,6 +17,7 @@
     
    console.log(isExist("Hello I am Krishna")); 
    console.log(getOccurrenceCount("Hey I am krishna here, Onkar how are you krishna krishna","krishna"));
+   console.log(wordDensity("Hey I am krishna here, Onkar how are you krishna krishna","krishna"));
   
 </script>
 </body>
