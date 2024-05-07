@@ -39,8 +39,24 @@ export function isExist(str){
         }
 }
 
-export function getOccurrenceCount()
+export function getOccurrenceCount(st,OccurenceWord)
 {
-    let strr = st
+    let strr = st.split(" ")
+   let count=0;
+    
+    for(let i=0;i<strr.length;i++)
+        {
+            if(strr[i]===OccurenceWord)
+                count ++;
+        }
+        if(count>0)
+            {
+                console.log(count);
+            }
+            else
+            {
+                console.log(`${count}`);
+            }
+
 }
 
