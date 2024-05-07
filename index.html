@@ -8,6 +8,15 @@
 </head>
 <body>
     <h1>JavaScriptAssignment</h1>
-<script src="stringManipulation.js"></script>
+<script type="module">
+    import {captalize,captalizeAll,isExist} from "./stringManipulation.js";
+   let result= captalize("sentence");
+   console.log(result);
+
+   console.log(captalizeAll("sentence both")); 
+    
+   console.log(isExist("Hello I am Krishna")); 
+  
+</script>
 </body>
 </html>
