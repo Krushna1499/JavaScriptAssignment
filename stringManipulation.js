@@ -89,12 +89,16 @@ export function getExt()
 
 export function removeWhitespace(ss)
 {
-    let s= ss.split(" ")
+    let s2=ss.split('');
 
-    for(let i =0 ;i<s.length;i++)
+    for(let i =0 ;i<ss.length;i++)
         {
-            if(s!=" ")
-            
+            if(ss!="  ")
+                {
+                    s2 =s2+s2[i];
+                }
+        
         }
+        return s2;
 } 
 
