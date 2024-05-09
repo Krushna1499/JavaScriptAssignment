@@ -136,3 +136,8 @@ export function truncateString(str, num) {
       return str;
     }
   }
+
+export function maskString()
+{
+    
+}
