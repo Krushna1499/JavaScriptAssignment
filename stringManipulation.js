@@ -7,14 +7,8 @@ export function captalize (sentence) {
     })
     return str.join(" ")
 }
-
-
-
-
-
-
 export function captalizeAll (sentence1) {
-    let str =sentence1.split("")             //convert string into array
+    let str =sentence1.split("")          //convert string into array
     
     for(let i =0;i<str.length;i++)
         {
@@ -26,7 +20,7 @@ export function captalizeAll (sentence1) {
 }
 
 export function isExist(str){
-    let st =str.includes("Onkar")
+    let st =str.includes("Hello")
 
     if(st)
         {
@@ -89,16 +83,48 @@ export function getExt()
 
 export function removeWhitespace(ss)
 {
-    let s2=ss.split('');
-
-    for(let i =0 ;i<ss.length;i++)
+    let s2=ss.split(" ");
+    let s3 = "";
+    for(let i =0 ;i<s2.length;i++)
         {
-            if(ss!="  ")
+            if(s2[i]!=" ")
                 {
-                    s2 =s2+s2[i];
+                    s3 =s3+ss[i];
                 }
         
         }
-        return s2;
+        return s3;
 } 
 
+export function reverseWords(s)
+{
+    let s1 = s.length;
+    let result = "";
+    for(let i =0;i<=s1-1;i++)
+        {
+            result =result + s[s1-i-1]
+        }
+        return result;
+
+}
+
+export function countVowels(s)
+{
+   const vowels ='aeiouAEIOU';
+   let count = 0;
+
+   for(let i= 0;i<s.length;i++)
+    {
+        if(vowels.includes(s[i]))
+            {
+                count++;
+            }
+            
+    }
+    return count;
+}
+
+export function isPalindrome (str)
+{
+    
+}
