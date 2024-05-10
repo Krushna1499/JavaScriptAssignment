@@ -156,4 +156,15 @@ export function truncateString(str, num) {
     }
   }
 
-  
+  export function validateEmail(str) {
+    let email = str.split("");
+		
+		if (email.includes("@") && email.includes(".") && email.length >= 7 && !email.includes(" ")){
+			if(email.indexOf("@") < email.indexOf(".", email.indexOf("@"))){
+				return "Valid Email";
+			}
+		} else{
+			return "Not a valid E-mail"
+		}
+}
+
