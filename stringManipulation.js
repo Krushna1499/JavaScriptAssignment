@@ -76,9 +76,17 @@ export function wordDensity(st1,OccurenceWord1)
            return (count1/strr.length)*100;
 }
 
-export function getExt()
+export function getExt(givenString)
 {
+    if(givenString.includes("."))
 
+        {
+           let s= givenString.split(".").pop("");
+            console.log(s);
+        }
+        else{
+            console.log("File don't have exetension");
+        }
 }
 
 export function removeWhitespace(ss)
@@ -127,6 +135,7 @@ export function countVowels(s)
 export function isPalindrome (str)
 {
 
+
 }
 
 export function truncateString(str, num) {
@@ -137,7 +146,14 @@ export function truncateString(str, num) {
     }
   }
 
-export function maskString()
+export function maskString(givenString,newStar)
 {
-    
+        let stringText =givenString.split("");
+        let stringlength = stringText.length;
+        for(let i=0;i<stringText.length;i++)
+            {
+                let slicedText= stringText(maski)
+                
+            }
+            
 }

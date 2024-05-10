@@ -9,7 +9,7 @@
 <body>
     <h1>JavaScriptAssignment</h1>
 <script type="module">
-    import {captalize,captalizeAll,isExist,getOccurrenceCount,wordDensity,removeWhitespace,reverseWords,countVowels,truncateString} from "./stringManipulation.js";
+    import {captalize,captalizeAll,isExist,getOccurrenceCount,wordDensity,removeWhitespace,reverseWords,countVowels,truncateString,getExt,maskString} from "./stringManipulation.js";
    let result= captalize("sentence");
    console.log(result);
 
@@ -22,6 +22,8 @@
    reverseWords("Hello")
    countVowels("krishna");
    truncateString("Hello",2)
+   getExt("index.html")
+   maskString("1546511564","1234")
 </script>
 </body>
 </html>
