@@ -132,12 +132,22 @@ export function countVowels(s)
     return count;
 }
 
-export function isPalindrome (str)
-{
-
-
-}
-
+export function isPalindrome(s) {
+    var len = s.length;
+    if (len < 2) {
+      return true;
+    }
+    var i = 0;
+    var j = len - 1;
+    while (i < j) {
+      if (s[i] != s[j]) {
+        return false;
+      }
+      i += 1;
+      j -= 1;
+    }
+    return true;
+  }
 export function truncateString(str, num) {
     if (str.length > num) {
       return str.slice(0, num) + "...";
@@ -146,14 +156,4 @@ export function truncateString(str, num) {
     }
   }
 
-export function maskString(givenString,newStar)
-{
-        let stringText =givenString.split("");
-        let stringlength = stringText.length;
-        for(let i=0;i<stringText.length;i++)
-            {
-                let slicedText= stringText(maski)
-                
-            }
-            
-}
+  
