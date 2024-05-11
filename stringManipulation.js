@@ -168,3 +168,10 @@ export function truncateString(str, num) {
 		}
 }
 
+export function maskString(fullNumber)
+{
+    let lastDigit =fullNumber.slice(-4);
+   
+    let maskedNumber = lastDigit.padStart(fullNumber.length,"*");
+    console.log(maskedNumber);
+}
